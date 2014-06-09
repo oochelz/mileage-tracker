@@ -1,0 +1,62 @@
+body {
+	font-family: 'Arimo', sans-serif;
+	color: #333;
+}
+header { padding: 15px 0; }
+footer {
+	background: #4CE29E;
+	padding: 15px;
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+section { margin: 15px; }
+aside { margin: 15px 0; }
+body, h1, h2 { margin: 0; }
+h1, h2, h3, .ui-dialog-title { font-weight: normal; font-family: 'Black Ops One', cursive; }
+h1, .or-bar { text-align: center; }
+h2 { color: #19935B; }
+input { width: 100%; font-family: 'Arimo', sans-serif; padding: 4px; }
+.or-bar { font-style: italic; }
+.or-bar hr { width: 43%; border: 0; border-top: 1px solid #AAA; }
+.or-bar hr, .left { float: left; }
+.or-bar hr:last-child, .right { float: right; }
+a, footer a, .btn, .ui-widget-header, header { color: #fff; text-decoration: none; }
+a { color: #88B85D; font-weight: bold; }
+.btn {
+	background: -webkit-linear-gradient(top, #4CE29E, #19935B);
+	border: 1px solid #99F0C9;
+	border-radius: 20px;
+	padding: 7px 20px;
+	font-family: 'Black Ops One', cursive;
+}
+.btn:hover {
+	background: -webkit-linear-gradient(top, #19935B, #4CE29E);
+	cursor: pointer;
+}
+.btn.secondary, .ui-widget-header, header {
+	background: -webkit-linear-gradient(top, #9FF553, #599F1B);
+	border: 1px solid #CAFA9F;
+}
+.btn.secondary { font-size: 18px; }
+.btn.secondary:hover { background: -webkit-linear-gradient(top, #599F1B, #9FF553); }
+input, .btn, .ui-widget-header { font-size: 20px; }
+.hidden, #total { display: none; }
+.list { display: table; width: 100%; margin-top: 10px; }
+.row { display: table-row; }
+.date, .mileage { display: table-cell; padding: 10px; }
+.row:nth-child(3n + 1) { background-color: #CAFA9F; }
+.row:nth-child(3n + 2) { background-color: #99F0C9; }
+.row:nth-child(3n + 3) { background-color: #EFFDA1; }
+.boxed-input {
+	padding: 15px;
+	padding-bottom: 0;
+	border-radius: 10px;
+	background-color: #EFEFEF;
+}
+.boxed-input, input { border: 1px solid #CCC; box-sizing: border-box; }
+.two-cols .field { width: 48%; }
+.two-cols .right { margin-left: 4%; }
+.ui-dialog .ui-dialog-titlebar-close { background: none; border: none; }
+#select-date select { font-size: 14px; padding: 4px; }

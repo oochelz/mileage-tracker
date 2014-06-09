@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html>
+<head>
+	<link rel="stylesheet" href="jquery-ui-1.9.2.custom.css">
+	<link rel="stylesheet" href="MileageTracker700.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Arimo|Black+Ops+One|Josefin+Sans' rel='stylesheet' type='text/css'>
+	<title>Mileage Tracker</title>
+</head>
+
+<body>
+	<header><h1>Mileage Tracker</h1></header>
+	<section class="boxed-input">
+		<h2><span id="date"></span></h2>
+		<div class="form">
+			<p class="field">
+				<label for="starting">Starting mileage</label><br>
+				<input type="number" id="starting" />
+			</p>
+			<p class="field">
+				<label for="ending">Ending mileage</label><br>
+				<input type="number" id="ending" />
+			</p>
+			<div class="or-bar"><hr>or<hr></div>
+			<p class="field">
+				<label for="miles">Total miles</label><br>
+				<input type="number" id="miles" />
+			</p>
+			<p>
+				<button id="submit" class="btn">Submit</button>
+				<span id="result"></span>
+			</p>
+		</div>
+	</section>
+	<section>
+		<h2 id="this-month-mileage"></h2>
+		<aside id="select-date">
+			<select id="month">
+				<option value="0">January</option>
+				<option value="1">February</option>
+				<option value="2">March</option>
+				<option value="3">April</option>
+				<option value="4">May</option>
+				<option value="5">June</option>
+				<option value="6">July</option>
+				<option value="7">August</option>
+				<option value="8">September</option>
+				<option value="9">October</option>
+				<option value="10">November</option>
+				<option value="11">December</option>
+			</select>
+			<select id="year">
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2012">2014</option>
+			</select>
+			<a href="javascript:void(0);" id="update-date">Update &raquo;</a>
+		</aside>
+		<aside>
+			<a id="email" class="btn secondary">email</a>
+			Tap a row to edit
+		</aside>
+		<div id="list-this-month" class="list"></div>
+
+		<div class="hidden form" id="back-fill-form">
+			<div class="two-cols">
+				<p class="left field">
+					<label>Starting mileage</label><br>
+					<input type="number" class="starting" />
+				</p>
+				<p class="right field">
+					<label>Ending mileage</label><br>
+					<input type="number" class="ending" />
+				</p>
+			</div>
+			<div class="or-bar"><hr>or<hr></div>
+			<p class="field">
+				<label>Total miles</label><br>
+				<input type="number" class="miles" />
+			</p>
+			<input type="hidden" class="date">
+		</div>
+	</section>
+	<footer><a href="http://oochelz.com">ooChelz.com</a></footer>
+</body>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="MileageTracker700.js"></script>
+</html>
